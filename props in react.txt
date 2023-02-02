@@ -1,0 +1,35 @@
+import React from "react";
+import Items from "./Items";
+
+function Product({ name, rollno, college }) {
+  return (
+    <div>
+      <h1>My name is : {name}</h1>
+      <h2>rollno is: {rollno}</h2>
+      <h3>My college name is : {college}</h3>
+
+      <Items name={name} college={college} />
+      <h3>Roll no. {rollno}</h3>
+    </div>
+  );
+}
+
+export default Product;
+
+////////////////////////////////////////
+import React from "react";
+
+function Items({name, college}) {
+  return (
+    <div>
+      <p>{name}</p>
+      <p>
+        <i>{college}</i>
+      </p>
+    </div>
+  );
+}
+
+export default Items;
+
+
